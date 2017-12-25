@@ -1,0 +1,20 @@
+neural_net.py:
+-use tensorflow to make a sound recognition neural network
+-take a fourier transformed sound byte as input
+-output is an size 88 column vector with each index corrseponding to a note
+-note that (ba dum tss) multiple notes can be flagged as "played"
+
+sound_engine.py:
+-listens to audio input from microphone
+-idk what the sampling rate is - it's TBD
+-runs an FFT on the sound bytes as input into the neural net
+
+training data folder:
+-use finale printmusic to create sound bytes of many many MANY notes and chords
+-note to use many different instruments to train neural network
+-add in a few "real life" sound bytes as well from violin, flute, piano, and the instruments of friends
+-only use 4/5 to train and 1/5 to test
+
+things you need to learn:
+-how to use tensorflow *properly* LOL
+-how to handle audio input
