@@ -6,6 +6,7 @@ neural_net.py (nn):
 or lower
 -note that (ba dum tss) multiple notes can be flagged as "played"
 -running alone trains said neural net with the data in the traning_data/primed_data folder
+-modify the script to go from tflearn to pure tf after obtaining mvp
 
 sound_engine.py (se):
 -listens to audio input from microphone

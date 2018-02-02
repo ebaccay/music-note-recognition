@@ -1,4 +1,4 @@
-import neural_net as np
+import neural_net as nn
 import sound_engine as se
 
 sound_engine_test_suite = ("sound_engine.py", [])
@@ -48,21 +48,29 @@ def suite_tester(suite):
         print("")
     return cases_passed, total_cases
 
+########################################
+#         UNIT TESTING METHODS         #
+########################################
+
 
 def assert_equals(actual, expected):
     """Sets up easy AssertionError throws for easier unit testing."""
     assert actual == expected, "Expected " + str(expected) + " but got " + str(actual) + "."
     return
 
+########################################
+#              TEST CASES              #
+########################################
+
 
 def se_sound_dictionary():
     ndict, vdict = se.note_dictionary()
-    assert_equals(vdict[0], "a_0")
-    assert_equals(vdict[39], "c_4")
-    assert_equals(vdict[38], "b_3")
-    assert_equals(ndict["b_3"], 38)
-    assert_equals(ndict["a_0"], 0)
-    assert_equals(ndict["c_4"], 39)
+    assert_equals(vdict[0], "a0")
+    assert_equals(vdict[39], "c4")
+    assert_equals(vdict[38], "b3")
+    assert_equals(ndict["b3"], 38)
+    assert_equals(ndict["a0"], 0)
+    assert_equals(ndict["c4"], 39)
     assert_equals(len(ndict), 88)
     assert_equals(len(vdict), 88)
 

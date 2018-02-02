@@ -1,0 +1,2 @@
+All of the data so far is courtesy of the following data set from Kaggle:
+https://www.kaggle.com/adithyakag/musicnotedetection

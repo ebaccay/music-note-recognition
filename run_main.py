@@ -5,6 +5,5 @@ import sound_engine as se
 def main():
     nn.load_model()
     while True:
-        sound_byte = se.steam()
-        note = nn.decide(sound_byte)
-        nn.print_out(note)
+        sound_byte = se.stream()
+        nn.decide(sound_byte)
